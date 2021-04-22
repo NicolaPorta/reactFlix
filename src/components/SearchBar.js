@@ -17,7 +17,10 @@ class SearchBar extends React.Component {
 
     onClickChange = (event) => {
         event.preventDefault();
-        this.props.onSearchMovie(this.state.searchText)
+        if(this.state.searchText !== '') {
+            this.props.onSearchMovie(this.state.searchText)
+            this.props.clickScrolling();
+        }
     }
 
     render() {

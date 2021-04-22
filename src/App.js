@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import MovieList from './components/MovieList';
 import NavBar from './components/Navbar';
+import Header from './components/Header';
 
 const APIKEY = '12d47eadb7bade3dfdef75db545e889f';
 const APIURL = "https://api.themoviedb.org/3/search/movie";
@@ -38,11 +39,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar logo={logo} onSearchMovie={this.searchMovies}/>
-        <header className="App-header">
-          <img onClick={this.scroll} src={logo} className="App-logo" alt="logo"  />
-          <h3>ReactFlix</h3>
-        </header>
+        <NavBar logo={logo} onSearchMovie={this.searchMovies} clickScrolling={this.scroll}/>
+        <Header logo={logo} clickScrolling={this.scroll}/>
         <main className="container">
           <MovieList movies={this.state.movies}/>
         </main>

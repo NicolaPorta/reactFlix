@@ -74,6 +74,10 @@ nav {
   border-bottom: 1px solid #61dafb;
 }
 
+nav button {
+  border: 1px solid #61dafb !important;
+}
+
 main {
   padding-top: 50px;
 }
