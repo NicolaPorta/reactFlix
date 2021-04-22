@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header h3 {
+  font-size: 100px;
+}
+
+.App-logo {
+  height: 40vmin;
+  cursor: pointer;
+}
+
+.header-logo {
+  height: 70px;
+}
+
+#root {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo, .header-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  background-color: rgb(1, 1, 1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #61dafb;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.search_not_found {
+  height: calc(100vh - 150px);
+}
+.search_not_found h2 {
+  font-size: 60px;
+  padding: 100px;
+  margin: auto;
+  background-color: rgb(1, 1, 1);
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
